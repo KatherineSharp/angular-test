@@ -1,0 +1,4 @@
+<input [(ngModel)]="searchField" (ngModelChange)="this.searchUpdated.next($event)" />
+<div *ngFor="let name of names">
+  {{ name }}
+</div>

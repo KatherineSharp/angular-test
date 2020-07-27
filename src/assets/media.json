@@ -1,0 +1,32 @@
+[
+  {
+     "url":"assets/images/dogs/australian-shepherd.jpg",
+     "description":"Australian Shepherd",
+     "sortOrder": 5
+  },
+  {
+     "url":"assets/images/dogs/beagle.jpg",
+     "description":"Beagle",
+     "sortOrder": 2
+  },
+  {
+     "url":"assets/images/dogs/corgi.jpg",
+     "description":"Corgi",
+     "sortOrder": 6
+  },
+  {
+     "url":"assets/images/dogs/dalmatian.jpg",
+     "description":"Dalmatian",
+     "sortOrder": 3
+  },
+  {
+     "url":"assets/images/dogs/husky.jpg",
+     "description":"Husky",
+     "sortOrder": 4
+  },
+  {
+    "url":"assets/images/dogs/golden-retriever.jpg",
+    "description":"Golden Retriever",
+    "sortOrder": 1
+ }
+]

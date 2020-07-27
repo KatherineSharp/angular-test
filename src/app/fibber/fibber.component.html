@@ -1,0 +1,5 @@
+Calculate the first: <input [ngModel]="numbersToCalculate"> numbers in the Fibonacci sequence.
+
+<div *ngFor="let fib of calculateFibs; let i = index">
+ {{i + 1}}. {{ fib }}
+</div>
