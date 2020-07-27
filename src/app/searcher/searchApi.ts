@@ -42,14 +42,16 @@ export class SearchApi {
       return this.names;
     }
     if (this.searchInProgress) {
-      throw 'ERROR: You can only search once every 3 seconds!';
+      throw 'ERROR: You can only search once every 1 seconds!';
     }
 
     this.searchInProgress = true;
     setTimeout(() => {
       this.searchInProgress = false;
-    }, 3000);
+    }, 1000);
 
-    return this.names.filter((name) => name.toLowerCase().indexOf(val) > -1);
+    return this.names.filter(
+      (name) => name.toLowerCase().indexOf(val.toLowerCase()) > -1
+    );
   }
 }
