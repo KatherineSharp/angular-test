@@ -1,7 +1,7 @@
 import { SearchApi } from './searchApi';
 import { Component, OnInit } from '@angular/core';
 import { from, Subject } from 'rxjs';
-import { take } from 'rxjs/operators';
+import { take, debounceTime } from 'rxjs/operators';
 
 @Component({
   selector: 'app-searcher',
@@ -18,7 +18,7 @@ export class SearcherComponent implements OnInit {
   searchUpdated = new Subject<string>();
 
   constructor() {
-    this.searchUpdated.subscribe((val) => this.search(val));
+    this.searchUpdated.pipe(debounceTime(250)).subscribe((val) => this.search(val));
   }
 
   ngOnInit(): void {
