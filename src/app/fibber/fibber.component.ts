@@ -17,7 +17,7 @@ export class FibberComponent implements OnInit {
     const fibs = [];
     const fibonacciGenerator = this.fib();
 
-    for (let i = 1; i < this.numbersToCalculate; i++) {
+    for (let i = 0; i < this.numbersToCalculate; i++) {
       const nextFibNumber = fibonacciGenerator.next().value;
       fibs.push(nextFibNumber);
     }
